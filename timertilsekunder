@@ -1,0 +1,18 @@
+
+import static javax.swing.JOptionPane.*;
+ class Timertilsekunder {
+
+	public static void main(String[] args) {
+        String timerlest = showInputDialog("tast inn antall timer: ");
+        String minutterlest = showInputDialog("tast inn antall minutter: ");
+        String sekunderlest = showInputDialog("tast inn antall sekunder: ");
+        double timer = Double.parseDouble(timerlest);
+        double minutter = Double.parseDouble(minutterlest);
+        double sekunder = Double.parseDouble(sekunderlest);
+        double minutter_ = minutter * 60;
+        double timer_ = timer * 3600;
+        String utskrift = timerlest + " time(r) + " + minutterlest + " minutter og " + sekunderlest + " sekunder, tilsvarer antall sekunder: " + (timer_+sekunder+minutter_);
+        showMessageDialog(null, utskrift);
+
+	}
+}
